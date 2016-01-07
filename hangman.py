@@ -49,7 +49,7 @@ def get_input(mask, word_to_guess, user_guesses, attempts, valid_characters, sec
 				return
 		else:
 			attempts = attempts + 1
-			print "\n Sorry! the letter is not present in the word! you have now %d attempts" % (6 - attempts)
+			print "\n Sorry! the letter is not present in the word! you have now %d guess left" % (6 - attempts)
 			you_lost = check_if_lost(attempts, secret_words)
 			if you_lost is True:
 				# If he user has lost it stop the game
